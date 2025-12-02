@@ -1,42 +1,64 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+    font-family: Karla, sans-serif;
+    background-color: #0b2434;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+div#root {
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+    max-width: 400px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainContent {
+    height: 100%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5em 3em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.title {
+    font-size: 40px;
+    margin: 0;
 }
 
-.card {
-  padding: 2em;
+.dieContainer {
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap: 20px;
+    padding-top: 1em;
 }
 
-.read-the-docs {
-  color: #888;
+button {
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    filter: drop-shadow(1px 3px 3px lightgrey);
+    cursor: pointer;
+    font-family: Karla, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.rollBtn {
+    background-color: #5035ff;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: auto;
+    height: 50px;
+    padding: 6px 21px;
+    margin-top: 30px;
 }
